@@ -1,0 +1,5 @@
+window.prompt("Copy to clipboard: Ctrl+C, Enter", $('.icon-preview__title').html().replace(/\W/g, '')+'.svg');
+var svg = $('.icon-preview__svg').html();
+var win = window.open('data:image/svg+xml,' + svg, '_blank');
+win.focus();
+clear();
